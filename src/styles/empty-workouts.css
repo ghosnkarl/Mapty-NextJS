@@ -1,0 +1,25 @@
+.empty-workouts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3.2rem;
+}
+
+.empty-img {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.empty-workouts--title {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+
+.empty-workouts--description {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  color: #868e96;
+}

@@ -1,0 +1,22 @@
+.radio-group--container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2rem;
+}
+
+.radio-group--container label {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.radio-group--container input {
+  height: 1.8rem;
+  width: 1.8rem;
+  cursor: pointer;
+  accent-color: var(--color-primary--1);
+}

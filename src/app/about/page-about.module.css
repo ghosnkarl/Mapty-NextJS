@@ -1,0 +1,36 @@
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-column: 1/-1;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -1px;
+  margin-bottom: 4.8rem;
+}
+
+.container p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+.container a:link,
+.container a:visited {
+  text-decoration: none;
+  color: var(--color-default--text);
+  font-weight: 700;
+}
+
+.container a:hover,
+.container a:active {
+  text-decoration: underline;
+  color: var(--color-primary--1);
+}

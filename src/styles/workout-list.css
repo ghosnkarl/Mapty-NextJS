@@ -1,0 +1,35 @@
+.list {
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+}
+
+.sort-container h1 {
+  font-size: 2.4rem;
+  color: black;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.search-input {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 1.4rem 2.4rem;
+  font-family: inherit;
+  stroke: none;
+  font-size: 1.4rem;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2.2rem;
+}
+
+.sort-container div {
+  display: flex;
+  gap: 1.2rem;
+}

@@ -1,0 +1,129 @@
+.container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-column: 1/-1;
+  padding-top: 8rem;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -1px;
+  margin-bottom: 4.8rem;
+}
+
+.table {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  border-collapse: separate;
+  border-spacing: 0 2rem;
+}
+
+.table-head {
+  font-size: 1.4rem;
+  color: black;
+  text-align: start;
+  padding: 1rem;
+}
+
+.table-row {
+  font-size: 1.4rem;
+  background-color: white;
+  /* cursor: pointer; */
+}
+
+/* .table-row:hover {
+  box-shadow: 0 0 0 1.5px black;
+} */
+
+.table-row td {
+  padding: 3rem 1rem;
+}
+
+.table-row td:first-child {
+  font-weight: 600;
+  color: #222;
+}
+
+.search-input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 1.4rem 2.4rem;
+  font-family: inherit;
+  stroke: none;
+  font-size: 1.4rem;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 3.6rem;
+}
+
+.filter-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 5rem;
+  align-items: flex-end;
+}
+
+.filter-container label {
+  font-size: 1.4rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.select-btn {
+  padding: 1.6rem 1.2rem;
+  box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  font-family: inherit;
+  cursor: pointer;
+  appearance: none;
+  background: url("../../assets/arrow-dropdown.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+.select-btn:hover,
+.select-btn:checked {
+  box-shadow: 0 0 1px 1px black;
+}
+
+.dropdown {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.btn-delete {
+  display: flex;
+  gap: 1.2rem;
+  height: fit-content;
+  align-items: center;
+  padding: 1.45rem 2.4rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: inherit;
+  background-color: #222;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.btn-delete:hover {
+  background-color: #343a40;
+}

@@ -1,0 +1,45 @@
+.fab-container {
+  padding: 1.6rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 400;
+  margin: 3rem 1.2rem;
+
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+
+.navigate-icon {
+  color: black;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.fab-container:hover {
+  background-color: #f1f3f5;
+}
+
+.loader {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 2px solid black;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

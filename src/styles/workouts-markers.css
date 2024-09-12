@@ -1,0 +1,8 @@
+.leaflet-popup .leaflet-popup-content-wrapper {
+  padding-right: 2rem;
+}
+
+.leaflet-popup .leaflet-popup-content .popup--difficulty {
+  font-size: 1.2rem;
+  margin: 0 0 0.6rem 0;
+}

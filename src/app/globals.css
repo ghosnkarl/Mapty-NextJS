@@ -1,42 +1,131 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-default--text: #222;
+  --color-border--gray: #999;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,
-body {
-  max-width: 100vw;
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
   overflow-x: hidden;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  height: 100vh;
+  overscroll-behavior-y: none;
+  overflow-y: hidden;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-default--text);
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.main-container {
+  display: grid;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  grid-template-columns: 45rem 1fr;
+  grid-template-rows: 7rem 1fr;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.map-container {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/*******************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*******************************/
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 400;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+}
+
+.btn--filled {
+  border: 1px solid #222;
+  background-color: #222;
+  color: white;
+}
+
+.btn--filled:hover {
+  background-color: #333;
+}
+
+.btn--delete {
+  border: 1px solid #f03e3e;
+  background-color: #f03e3e;
+  color: white;
+}
+
+.btn--delete:hover {
+  background-color: #e03131;
+}
+
+.btn--outline {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #999;
+}
+
+.btn--outline:hover {
+  background-color: #e9ecef;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.margin-right--md {
+  margin-right: 2.4rem !important;
+}
+
+.header {
+  font-size: 2.4rem;
+  color: black;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.6rem;
+}
+
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+}
+
+.dialog-container h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.dialog-container p {
+  font-size: 1.6rem;
+  color: #444;
+  margin-bottom: 3.4rem;
+}
+
+.dialog-btn--container {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: flex-end;
 }
