@@ -15,12 +15,7 @@ const WorkoutMarkers = () => {
       {workouts.map((workout: WorkoutInterface) => {
         return (
           <Marker key={workout.title} position={workout.coords}>
-            <Popup>
-              <div>
-                <p className="popup--difficulty">{workout.difficulty}</p>
-                <p className="marker-popup--difficulty">{workout.title}</p>
-              </div>
-            </Popup>
+            <Popup>{workout.title}</Popup>
           </Marker>
         );
       })}
