@@ -29,7 +29,10 @@ const Workout = (workout: WorkoutInterface) => {
 
   function handleEditClick(e: React.MouseEvent<HTMLButtonElement>) {
     e.stopPropagation();
+    dispatch(EditForm(workout));
+  }
 
+  function handleItemClick() {
     dispatch(EditForm(workout));
   }
 
@@ -63,7 +66,7 @@ const Workout = (workout: WorkoutInterface) => {
           </div>
         </div>
       </Dialog>
-      <li className="list-item">
+      <li onClick={handleItemClick} className="list-item">
         <div className="workout-img">
           <Image src={workoutIcon} alt={`${workout.activity} Icon`} />
         </div>
