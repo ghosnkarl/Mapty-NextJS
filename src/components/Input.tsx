@@ -1,6 +1,6 @@
 "use client";
 import { ComponentPropsWithoutRef } from "react";
-import "../styles/Input.css";
+import "../styles/input.css";
 
 interface InputProps extends ComponentPropsWithoutRef<"input"> {
   label: string;

@@ -1,5 +1,5 @@
 import { createRef, FormEvent } from "react";
-import "../styles/Form.css";
+import "../styles/form.css";
 
 import { ACTIVITES, LEVELS } from "../data/data";
 import Input from "./Input";
