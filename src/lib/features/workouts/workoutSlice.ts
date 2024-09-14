@@ -56,6 +56,7 @@ export const workoutSlice = createSlice({
           };
           return updatedItem;
         }
+        return workout;
       });
       state.workouts = [...newList];
       localStorage.setItem("workouts", JSON.stringify(state.workouts));
