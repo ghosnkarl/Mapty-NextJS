@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <Sidebar></Sidebar>
+      <Sidebar />
       <Map />
     </>
   );

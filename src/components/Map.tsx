@@ -50,9 +50,13 @@ const Map = () => {
         zoomControl={false}
         className="map-container"
       >
-        <TileLayer
+        {/* <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        /> */}
+        <TileLayer
+          url="https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}.png?lang=en&access-token=poi4f4Jpm6n3Vc74zUfVcviRt86kDzvF0rxogmPEZZjy4bBj35hU0pFu83OxyPde"
+          attribution='<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>'
         />
         <AddWorkout />
         <WorkoutMarkers />
